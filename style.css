@@ -41,18 +41,18 @@ main{
     /* z-index: 1; */
     position: relative;
     display: flex;
-    background-color: transparent;
+    background:url(image/zv6.jpg);
     justify-content:center;
     padding-top: 70px;
 }
-#canvas {
+/* #canvas {
     z-index: -1;
     position: absolute;
     width: 100%;
     left: 0;
     top: 0;
     background-color: #000;
-}
+} */
 /* --Robot-man-- */
 .robot_man{
     margin: auto;
