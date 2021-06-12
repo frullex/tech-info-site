@@ -11,7 +11,7 @@ body{
 #header{
     display: flex;
     justify-content:center;
-    background-color:#00FF0065 ;
+    background-color:rgba(127,255,0,.25) ;
     /* width: 100vh; */
     height: 250px;
     /* position:relative ; */
@@ -109,7 +109,7 @@ main{
     left: 0;
     width: 35px;
     height: 25px;
-    background-color: rgb(130, 173, 10);
+    background-color: rgb(12, 163, 138);
     border: 1px solid coral ;
     border-radius: 0 15px 15px 0;
 }
