@@ -23,11 +23,24 @@ main{
 }
 /* --head-- */
 .man_head{
-    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.man_ear{
+    width: 30px;
+    height: 40px;
+    background-color:chartreuse ;
+    border: 1px solid coral;
+    border-radius: 5px;
+
+}
+.man_head_main{
+    width: 180px;
     height: 120px;
     background-color: chartreuse;
     border: 1px solid coral;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 
