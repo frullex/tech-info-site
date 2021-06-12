@@ -1,25 +1,49 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     background-color: bisque;
+
 }
 /* --HEADER-- */
-header{
-
+#header{
+    display: flex;
+    justify-content:center;
+    background-color:#00FF0065 ;
+    /* width: 100vh; */
+    height: 250px;
+    /* position:relative ; */
+}
+.header_title{
+    margin: auto;
+    display: block;
+    font-size: 50px;
+    color:white;
+    /* position: relative; */
 }
 /* --MAIN-- */
 main{
 
 }
+#q{
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+}
 /* --Robot-- */
 .robot{
+    /* z-index: 1; */
     display: flex;
-    background-color:#83E7E7 ;
+    background-color: transparent;
+    justify-content:center;
+    padding-top: 70px;
 }
 /* --Robot-man-- */
 .robot_man{
-
+    margin: auto;
 }
 /* --head-- */
 .man_head{
@@ -41,6 +65,62 @@ main{
     background-color: chartreuse;
     border: 1px solid coral;
     border-radius: 15px;
+}
+/* --Robot-cat-- */
+.robot_cat{
+    margin:auto;
+    position:relative;
+}
+/* --head-- */
+.cat_head{
+    width: 135px;
+    height: 120px;
+    background-color:chartreuse ;
+    border: 1px solid coral;
+    border-radius: 15px;
+}
+.cat_ear{
+    top: 20px;
+    left: 85px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: chartreuse;
+    border: 1px solid coral;
+    border-radius: 50px;
+
+}
+.cat_ear_item{
+    top: 10px;
+    left: 15px;
+    width: 20px;
+    height: 100px;
+    position: absolute;
+    background-color: chartreuse;
+    border: 1px solid coral;
+    border-radius: 15px; 
+    transform-origin: 10px 10px;
+    transform: rotateZ(180deg);
+
+}
+.cat_eye{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 35px;
+    height: 25px;
+    background-color: rgb(130, 173, 10);
+    border: 1px solid coral ;
+    border-radius: 0 15px 15px 0;
+}
+.cat_eye_pupil{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width:30px;
+    height: 7px;
+    background-color: black;
+    border-radius: 0 5px 5px 0;
 }
 
 
