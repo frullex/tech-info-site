@@ -1,17 +1,30 @@
 // --Script rain--
+let s = window.screen;  //Переменная для выясняющая размер вашего экрана 
+let height;
+let header = document.querySelector('header');
+let width;
+height = q.height = header.clientHeight; //250;
 
-var s = window.screen;  //Переменная для выясняющая размер вашего экрана 
-var header = document.querySelector('header');
-var width = q.width = s.width;
+width = q.width = header.clientWidth;//s.width;
 console.log(header);
 console.log(q);
 console.log(width);
-var height = q.height = header.clientHeight; //250;
 console.log(height);
-console.log(header.width);
-var letters = Array(256).join(1).split('');
+// console.log(header.width);
 
-var draw = function () {
+window.addEventListener('resize', function (event) {
+    Event.preventDefault
+    header = document.querySelector('header');
+    height = q.height = header.clientHeight; //250;
+
+    width = q.width = header.clientWidth;//s.width;
+
+
+});
+
+let letters = Array(256).join(1).split('');
+
+let draw = function () {
     q.getContext('2d').fillStyle = 'rgba(0,0,0,.05)'; //Тут цвет фона
     q.getContext('2d').fillRect(0, 0, width, height);
     q.getContext('2d').fillStyle = '#0F0'; //Тут цвет букв
@@ -23,4 +36,4 @@ var draw = function () {
     });
 };
 setInterval(draw, 33);
-// --rain--
+// --end--rain--
