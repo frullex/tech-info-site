@@ -1,4 +1,4 @@
-
+// --Script rain--
 
 var s = window.screen;  //Переменная для выясняющая размер вашего экрана 
 var header = document.querySelector('header');
@@ -6,7 +6,7 @@ var width = q.width = s.width;
 console.log(header);
 console.log(q);
 console.log(width);
-var height = q.height = 250;
+var height = q.height = header.clientHeight; //250;
 console.log(height);
 console.log(header.width);
 var letters = Array(256).join(1).split('');
@@ -23,4 +23,4 @@ var draw = function () {
     });
 };
 setInterval(draw, 33);
-
+// --rain--
